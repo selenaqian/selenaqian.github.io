@@ -4,3 +4,10 @@ body {
 .navbar {
     text-transform: uppercase;
 }
+.main {
+    background-image: url("images/Harbor%20Depths.jpg");
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
