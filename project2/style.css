@@ -42,6 +42,9 @@ h1 {
     margin: 10;
     font-weight: 400;
 }
+h3 {
+    font-weight: 600;
+}
 .page {
     padding-left: 20;
     background-color: rgba(255,255,255,0.55);
@@ -52,4 +55,7 @@ img {
     float: left;
     margin-right: 15;
     margin-bottom: 10;
+}
+.imggroup {
+    padding-bottom: 60;
 }
