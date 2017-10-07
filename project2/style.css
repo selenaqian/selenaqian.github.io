@@ -22,13 +22,15 @@ body {
 .title {
     padding-top: 200;
     font-size: 80;
+    margin: 10;
 }
 .other {
     font-family: open sans;
     font-size: 16;
     font-weight: 300;
+    margin: 10;
 }
 .start {
     font-size: 40;
-    padding-bottom: 40;
+    margin: 10;
 }
