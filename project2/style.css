@@ -1,5 +1,6 @@
 body {
     font-family: Oswald;
+    background-color: rgba(220,220,220, 0.2)
 }
 .navbar {
     text-transform: uppercase;
@@ -10,4 +11,17 @@ body {
     background-position: center;
     background-size: cover;
     color: white;
+    padding-left: 20;
+}
+.title {
+    padding-top: 200;
+    font-size: 80;
+}
+.other {
+    font-family: open sans;
+    font-size: 16;
+    font-weight: 300;
+}
+.start {
+    font-size: 40;
 }
