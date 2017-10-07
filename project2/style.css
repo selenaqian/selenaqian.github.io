@@ -1,6 +1,7 @@
 body {
     font-family: Oswald;
     background-color: rgba(169,169,169,0.8);
+    text-align: left;
 }
 .navbar {
     text-transform: uppercase;
@@ -45,9 +46,11 @@ h1 {
     position: sticky;
     top: 44;
     background-color: rgb(225,225,225);
+    text-decoration: underline;
 }
 h3 {
     font-weight: 600;
+    font-style: normal;
 }
 .page {
     padding-left: 20;
@@ -63,4 +66,14 @@ img {
 .imggroup {
     padding-bottom: 30;
     padding-top: 30;
+    line-height: 150%;
+    font-style: italic;
+}
+#back {
+    position: fixed;
+    bottom: 7;
+    right: 7;
+    padding: 5;
+    border: 2.5px solid rgb(169,169,169);
+    background-color: rgb(225,225,225);
 }
