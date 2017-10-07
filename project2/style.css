@@ -38,9 +38,13 @@ body {
     margin: 10;
 }
 h1 {
-    padding-top: 70;
+    padding-top: 10;
+    padding-bottom: 5;
     margin: 10;
     font-weight: 400;
+    position: sticky;
+    top: 50;
+    background-color: rgb(225,225,225);
 }
 h3 {
     font-weight: 600;
@@ -57,5 +61,6 @@ img {
     margin-bottom: 10;
 }
 .imggroup {
-    padding-bottom: 60;
+    padding-bottom: 30;
+    padding-top: 30;
 }
