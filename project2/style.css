@@ -2,16 +2,23 @@ body {
     font-family: Oswald;
     background-color: rgba(169,169,169,0.8);
     text-align: left;
+    margin: 0px;
 }
 .navbar {
-    text-transform: uppercase;
+    width: 100%;
+    display: flex;
+    justify-content: left;
     position: sticky;
     padding-left: 20;
     padding-top: 10;
-    letter-spacing: 2;
     top: 0;
     background-color: rgba(184,184,184,1);
     padding-bottom: 10;
+}
+.option {
+    text-transform: uppercase;
+    letter-spacing: 2;
+    padding: 0px 10px 0px 10px;
 }
 .main {
     background-image: url("images/Harbor%20Depths.jpg");
@@ -72,7 +79,7 @@ img {
 #back {
     position: fixed;
     bottom: 7;
-    right: 7;
+    right: 5;
     padding: 5;
     border: 2.5px solid rgb(169,169,169);
     background-color: rgb(225,225,225);
