@@ -17,22 +17,42 @@ var el = document.getElementById('p2');
 el.textContent = 'Hello, ' + p2 + '!';
 
 var p3 = '';
-var thiscolor = '';
+var color1 = '';
 function f3(x, y) {
     if (x > y) {
-        var thiscolor = 'yellow';
+        color1 = 'yellow';
         return 'bananas';
     } else if (x < y) {
-        var thiscolor = 'brown';
+        color1 = 'brown';
         return 'porcupine';
     } else if (x === y && x < 0) {
-        var thiscolor = 'red';
+        color1 = 'red';
         return 'red apples';
     } else {
-        var thiscolor = 'red';
+        color1 = 'red';
         return 'green apples';
     }
 }
 p3 = f3(3, 2);
 var el = document.getElementById('p3');
 el.textContent = p3;
+
+var p4 = '';
+var color2 = '';
+function f4(x) {
+    x = x.replace(/\D/g,'');
+    var firstchar = p4.substring(0,1);
+    if (x.length === 10) {
+        color2 = 'green';
+        return 'valid';
+    } else if (x.length === 11 && firstchar === "1") {
+        color2 = 'green';
+        return 'valid';
+    } else {
+        color2 = 'red';
+        return 'invalid';
+    }
+}
+p4 = f4('(123)-456-7890');
+var el = document.getElementById('p4');
+el.textContent = p4;
