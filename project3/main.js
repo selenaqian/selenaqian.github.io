@@ -56,3 +56,12 @@ function f4(x) {
 p4 = f4('(123)-456-7890');
 var el = document.getElementById('p4');
 el.textContent = p4;
+
+var p5 = '';
+function f5(x) {
+    var third = x[2];
+    return third;
+}
+p5 = f5(['apples', 'bananas', 'oranges', 'pears', 'peaches', 'pineapple']);
+var el = document.getElementById('p5');
+el.textContent = p5;
