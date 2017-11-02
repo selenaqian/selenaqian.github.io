@@ -1,8 +1,10 @@
+<html>
 <head>
     <title>Project3: JavaScript</title>
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
 </head>
-<body onclick="colorchange(event)">
+<body>
     1. Input a Number: <input type="text" id="num1">
     <button onclick="f1()">Submit</button>
     <p id="p1">f(x) = </p>
@@ -17,14 +19,16 @@
     4. Phone Number: <input type="text" id="phonenum">
     <button onclick="f4()">Submit</button>
     <h1 id="p4"></h1>
-    5. <p id="p5"></p>
+    5. Input a list, with a comma and a space between each element: <input type = "text" id="list">
+    <button onclick="f5()">Submit</button>
+    <p id="p5"></p>
     6.
-    <center>
-        <div class="button">Button 1</div>
-        <div class="button">Button 2</div>
-        <div class="button">Button 3</div>
-        <div class="button">Button 4</div>
-        <div class="button">Button 5</div>
+    <center onclick="colorchange(event)">
+        <button class="button">Button 1</button>
+        <button class="button">Button 2</button>
+        <button class="button">Button 3</button>
+        <button class="button">Button 4</button>
+        <button class="button">Button 5</button>
         </center>
 </body>
-<script src="main.js"></script>
+</html>

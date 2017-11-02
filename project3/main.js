@@ -5,9 +5,9 @@ function f1() {
 }
 
 function f2() {
-    var first = document.getElementById("name1");
-    var middle = document.getElementById("name2");
-    var last = document.getElementById("name3");
+    var first = document.getElementById("name1").value;
+    var middle = document.getElementById("name2").value;
+    var last = document.getElementById("name3").value;
     var p2 = first + " " + middle + " " + last;
     var el = document.getElementById('p2').innerHTML = "Hello, " + p2 + "!";
 }
@@ -26,13 +26,14 @@ function f3() {
         color1 = 'red';
         p3 = 'red apples';
     } else {
-        color1 = 'red';
+        color1 = 'green';
         p3 = 'green apples';
-    }   document.getElementById('p3').innerHTML = p3;
+    }
+    document.getElementById('p3').innerHTML = p3;
     document.getElementById('p3').style.color = color1;
 }
 
-function f4(x) {
+function f4() {
     var p4 = '', color2 = '', output4 = '';
     p4 = document.getElementById("phonenum").value;
     p4 = p4.replace(/\D/g,'');
@@ -45,21 +46,32 @@ function f4(x) {
         output4 = 'valid';
     } else {
         color2 = 'red';
-        output4 'invalid';
+        output4 = 'invalid';
     }
     document.getElementById('p4').innerHTML = output4;
     document.getElementById('p4').style.color = color2;
 }
 
-var p5 = '';
-function f5(x) {
-    var third = x[2];
-    return third;
+function f5() {
+    var str = document.getElementById('list').value;
+    var p5 = str.split(", ");
+    var third = p5[2];
+    var el = document.getElementById('p5').innerHTML = third;
 }
-p5 = f5(['apples', 'bananas', 'oranges', 'pears', 'peaches', 'pineapple']);
-var el = document.getElementById('p5');
-el.textContent = p5;
 
-function colorchange(event) {
-    
+function colorchange(x) {
+    allbuttons = document.getElementsByClassName("button"); element = event.target;
+    for(i = 0; i < allbuttons.length; i++) {
+        allbuttons[i].style.backgroundColor = "";
+    }
+    if(element.nextElementSibling !== null) {
+        bgcolor = element.nextElementSibling.style.backgroundColor;
+        element.nextElementSibling.style.backgroundColor = "blue";
+    }
+    else {
+        for(i = 0; i < allbuttons.length; i++) {
+            bgcolor = allbuttons[i].style.backgroundColor;
+            allbuttons[i].style.backgroundColor = "red";
+        }
+    }
 }
