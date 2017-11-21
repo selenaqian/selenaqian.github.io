@@ -19,3 +19,18 @@ $(function () {
         $('#p2').append($ans2);
     });
 });
+$(function () {
+   $('#b3').on('click', function(e) {
+       var $numx = parseFloat($('#numx').val());
+       var $numy = parseFloat($('#numy').val());
+       if ($numx>$numy) {
+           $('#p3').append('bananas').css('color', 'yellow');
+       } else if ($numy>$numx) {
+           $('#p3').append('porcupine').css('color', 'brown');
+       } else if ($numx===$numy && $numx<0) {
+           $('#p3').append('red apples').css('color', 'red');
+       } else {
+           $('#p3').append('green apples').css('color', 'green');
+       }
+   });
+});
