@@ -50,3 +50,23 @@ $(function () {
         $('#p5').append($list[2]);
     });
 });
+$(function () {
+    $('.button').on('click', function(e) {
+        $('.button').css('background-color', '');
+    });
+    $('#button1').on('click', function (e) {
+        $('#button2').css('background-color', 'blue');
+    });
+    $('#button2').on('click', function (e) {
+        $('#button3').css('background-color', 'blue');
+    });
+    $('#button3').on('click', function (e) {
+        $('#button4').css('background-color', 'blue');
+    });
+    $('#button4').on('click', function (e) {
+        $('#button5').css('background-color', 'blue');
+    });
+    $('#button5').on('click', function (e) {
+        $('.button').css('background-color', 'red');
+    });
+});
