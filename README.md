@@ -1,4 +1,9 @@
-# Repositories/Projects
+# My Projects
+
+## Spatial Reasoning Education in AR
+(Repository is currently not public due to potential copyright concerns with the activities)
+
+Currently developing as part of an independent study project for Fall 2020. iOS app with augmented reality that aims to simulate the in-person experience through allowing physical interaction with virtual objects to improve skills in spatial reasoning, an area that has one of the most persistent gender gaps in cognitive skills. This is particularly important because there still exists a gender gap in STEM, a gap that starts to appear in middle school and only widens from there. Also aims to examine education in the time of social distancing and how we can shift education to think about the online, remote experience and build better solutions for our current situation as well as take advantage of the affordances that would not be possible in other forms.
 
 ## [Sanborn Maps Navigator](https://github.com/selenaqian/sanborn-maps-navigator)
 Developed for Junior Fellowship at the Library of Congress in Summer 2020. Web interface for navigating through the Sanborn Fire Insurance Maps collection and discovering more about the history of various places. Combines the Sanborn Maps Collection with photos in the Newspaper Navigator dataset (visual content pulled from Chronicling America historic newspapers collection using machine learning).
