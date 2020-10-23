@@ -13,4 +13,4 @@ Developed as final project for Unity 3D and Interface Design class in Fall 2019.
 Created for The Chronicle, Duke's student newspaper. Interactive data visualizations based on data from survey of first-year students in the class of 2023. Also published on The Chronicle's site [here](https://www.dukechronicle.com/article/2019/11/duke-first-year-class-of-2023-survey-results). Built using the Google Charts API.
 
 ## [Projects from Web Development & Society class (Fall 2017)](https://github.com/selenaqian/selenaqian.github.io)
-Half-credit house course taught my fellow undergraduate students. Foundational concepts in HTML, CSS, javaScript, and jQuery. Inspired me to continue coding and building, solving problems and creating.
+Half-credit house course taught by fellow undergraduate students. Foundational concepts in HTML, CSS, javaScript, and jQuery. Inspired me to continue coding and building, solving problems and creating.
