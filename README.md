@@ -11,6 +11,9 @@ Developed for Junior Fellowship at the Library of Congress in Summer 2020. Web i
 ## [AR Storytelling](https://github.com/selenaqian/AR-storytelling)
 Developed as final project for Immersive Virtual Worlds class in Spring 2020. Proof-of-concept that aims to bring a non-linear, physically interactive story experience to Goldilocks and the Three Bears.
 
+## [Moono](https://github.com/selenaqian/moono)
+Developed as final project for CS 307: Software Implementation and Design in Spring 2020. Worked with team of 4 total students to create a flexible card game system using Java and JavaFX that focused on implementing several variations of Uno and could be used as a base for other card games.
+
 ## [Habitat Hoppers Game](https://github.com/selenaqian/habitat-hoppers-game)
 Developed as final project for Unity 3D and Interface Design class in Fall 2019. 2-person platformer with 3D map elements. Inspired by games like Fireboy and Watergirl, Super Mario Bros., Doodle Jump.
 
