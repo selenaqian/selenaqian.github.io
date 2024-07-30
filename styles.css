@@ -1,0 +1,12 @@
+#main-menu ul {
+    display: flex;
+}
+
+#main-menu li {
+    flex: auto;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
