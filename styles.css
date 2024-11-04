@@ -10,3 +10,20 @@
 a {
     text-decoration: none;
 }
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+footer h3 {
+    margin-bottom: 0.5em;
+}
+
+footer #my-work-links {
+    margin-left: 3;
+}
+
+footer img {
+    height: 20;
+    margin-right: 10;
+}
