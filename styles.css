@@ -15,8 +15,19 @@ body {
 }
 
 #headshot {
-    width: 20vw;
-    height: 20vw;
+    width: 15vw;
+    height: 15vw;
+    min-height: 100px;
+    min-width: 100px;
+    max-height: 150px;
+    max-width: 150px;
+    border-radius: 100%;
+    margin: auto;
+    display: block;
+}
+
+h1 {
+    text-align: center;
 }
 
 .container {
