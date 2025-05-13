@@ -32,6 +32,39 @@ main-menu .child {
 main-menu .current {
     color: red;
 }
+  
+main-menu a:hover {
+    background-color: #b6c3e6;
+    color: black;
+}
+  
+main-menu .dropdown {
+    display: none;
+}
+
+@media screen and (max-width: 450px) {
+    #main-menu.closed .child {
+        text-align: left;
+    }
+    main-menu a:not(:first-child) {
+        display: none;
+    }
+    main-menu a.dropdown {
+        float: right;
+        display: block;
+    }
+  }
+  
+@media screen and (max-width: 450px) {
+    #main-menu.open {
+        flex-direction: column;
+    }
+    #main-menu.open a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
 
 #headshot {
     width: 15vw;
