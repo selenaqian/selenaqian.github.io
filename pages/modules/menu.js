@@ -12,46 +12,40 @@ class MainMenu extends HTMLElement {
         const main = document.createElement('nav');
         main.id = 'main-menu';
         main.classList.add('navigation');
-        const list = document.createElement('ul');
-        list.classList.add('container');
+        main.classList.add('container');
         let pathPrefix;
-        const home = document.createElement('li');
-        const homeLink = document.createElement('a');
+
+        const home = document.createElement('a');
 
         if (window.location.href.includes('pages')) {
             pathPrefix = './';
-            homeLink.href = '../index.html';
+            home.href = '../index.html';
         }
         else {
             pathPrefix = './pages/';
-            homeLink.href = './index.html';
+            home.href = './index.html';
         }
 
         if (window.location.href.includes('index.html')) {
-            homeLink.classList.add('current');
+            home.classList.add('current');
         }
-        homeLink.innerText = 'Home';
+        home.innerText = 'Home';
         home.classList.add('child');
-        home.appendChild(homeLink);
-        list.appendChild(home);
+        main.appendChild(home);
 
 
         for (let i = 0; i < PAGES.length; i++) {
-            const navPage = document.createElement('li');
-            navPage.classList.add('child');
-
             const link = document.createElement('a');
+            link.classList.add('child');
             link.href = `${pathPrefix}${PAGES[i].path}`;
             link.innerText = PAGES[i].title;
             if (window.location.href.includes(PAGES[i].path)) {
                 link.classList.add('current');
             }
 
-            navPage.appendChild(link);
-            list.appendChild(navPage);
+            main.appendChild(link);
         }
 
-        main.appendChild(list);
         this.appendChild(main);
     }
 }
