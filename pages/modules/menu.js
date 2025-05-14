@@ -2,7 +2,7 @@ const PAGES = [
     {title: 'Code', path: 'code.html'},
     {title: 'Design', path: 'design.html'},
     {title: 'Art', path: 'art.html'},
-    {title: 'Writing', path: 'writing.html'},
+    {title: 'Writing + Research', path: 'writing.html'},
 ];
 
 class MainMenu extends HTMLElement {

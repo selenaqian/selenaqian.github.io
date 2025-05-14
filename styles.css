@@ -80,8 +80,33 @@ main-menu .dropdown {
     display: block;
 }
 
+.column-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.row-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+img {
+    object-fit: contain;
+}
+
+.header {
+    margin-bottom: 10px;
+}
+
+.subhead {
+    color: #666666;
+    margin-top: 10px;
+}
+
 custom-footer {
-    padding: 20px;
+    padding: 3vw 5vw 5vw;
     background-color: #b6c3e6;
     flex-shrink: 0;
 }
