@@ -86,6 +86,7 @@ main-menu .dropdown {
     flex-flow: row wrap;
     gap: 20px;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .row-container .child {
@@ -266,6 +267,30 @@ a:hover {
     max-width: 90vw;
     float: none;
     margin-top: 20px;
+}
+
+#art {
+    justify-content: space-around;
+}
+
+#art .row-container {
+    justify-content: space-around;
+}
+
+#art .child {
+    margin: 0;
+}
+
+#art .row-container .child {
+    margin: 0;
+}
+
+#art img {
+    max-width: 300px;
+}
+
+#art .row-container img {
+    max-width: 300px;
 }
 
 custom-footer {
