@@ -3,9 +3,146 @@
         <link rel="stylesheet" href="../styles.css">
     </head>
     <body>
-        <div class="main">
+        <div class="main column-container">
             <h1>Code</h1>
-            <main-menu></main-menu>    
+            <main-menu></main-menu>
+            <section>
+                <h2>PBS KIDS Games App</h2>
+                <p>
+                    I've worked at PBS KIDS since October 2021, as an engineer on the newly-established Games Squad. I started out doing small bugfixes and minor changes to GraphQL queries, then quickly got my feet under me and started developing new features, implementing themes, and automating workflows. I became our team's subject matter expert in the Universal Analytics to Google Analytics 4 migration and am now leading work on a new, modular, content management system-driven landing page for the redesigned Games App in React Native.
+                </p>
+                <div class="column-container">
+                    <section>
+                        <h3>Pause Menu</h3>
+                        <img src="../assets/pause-menu.png"></img>
+                        <p>
+                            Accessibility features now exposed to the kid or grown-up during gameplay in Games App.
+                        </p>
+                        <p>
+                            Prior to my building this feature, the Games App did not have a standard way to control individual sound channels, or to pause a game other than backgrounding the app or closing the device. This new menu provides those new accesibility capabilities, and the goal in the future is to continue to expand upon the available features. This menu has been many years in development, with a number of design iterations and playtesting rounds to see the way that kids and grown-ups interacted with the menu, what icons made sense, what areas were attractive, and so on.
+                        </p>
+                    </section>
+                    <section>
+                        <h3>Jelly, Ben, and Pogo Game of the Day</h3>
+                        <video controls src="../assets/jbp-gotd.mov"></video>
+                        <p>
+                            Featured animation in the top section of the Games App that encourages kids to explore a selected game.
+                        </p>
+                        <p>
+                            I implemented the animation using <a href="https://gsap.com/" target="_blank">GSAP</a> and collaborated with the design team to fine-tune the timing and feel of the interaction. The game card wiggles to encourage curiosity, and the stickers pop away after being clicked. If some stickers are clicked, then the whole section is not touched for a few seconds, the rest of the stickers "sweep" off. Once all the stickers are gone and the entire game card is revealed, that triggers the final bounce and "Game of the Day!" audio.
+                        </p>
+                    </section>
+                    <section>
+                        <h3>SpringRoll Game Tooling Suite</h3>
+                        <a href="https://github.com/SpringRoll">GitHub page</a>
+                        <p>
+                            An ecosystem for building educational, accessible HTML5 games. This is an open-source suite of tools for game developers intended to standardize and allow for distribution across multiple platforms. The repositories are largely maintained by PBS KIDS developers (including me!), with suggestions and contributions from our game developer network.
+                        </p>
+                    </section>    
+                </div>
+            </section>
+            <section>
+                <h2>Sanborn Maps Navigator</h2>
+                <div class="column-container">
+                    <a href="https://github.com/selenaqian/sanborn-maps-navigator" target="_blank">GitHub repository</a>
+                    <a href="https://labs.loc.gov/work/experiments/sanborn-navigator/" target="_blank">Published on Library of Congress Labs Experiments site</a>
+                    <a href="https://libraryofcongress.github.io/sanborn-navigator/" target="_blank">
+                        <button>Try it!</button>
+                    </a>
+                </div>
+                <p>
+                    Developed for Junior Fellowship at the Library of Congress in Summer 2020. Web interface for navigating through the Sanborn Fire Insurance Maps collection and discovering more about the history of various places. Combines the Sanborn Maps Collection with photos in the Newspaper Navigator dataset (visual content pulled from Chronicling America historic newspapers collection using machine learning).
+                </p>
+                <img src="../assets/sanborn-instructions.gif"></img>
+                <p>
+                    My goals for the project were to:
+                </p>
+                <ol>
+                    <li>Connect a wider audience to the vast collection of Sanborn Maps by creating a more intuitive navigation tool.</li>
+                    <li>Introduce an element of serendipity and encourage discovery via the connection to the time and place when these maps were created.</li>
+                </ol>
+                <p>I developed the site using HTML, CSS, and JavaScript, specifically the D3 library. I used Python 3 and Jupyter notebooks to gather the data behind the project from the Library's API.</p>    
+            </section>
+            <section>
+                <h2>Spatial Reasoning Education in AR</h2>
+                <p>
+                    (Repository is not public due to potential copyright concerns with the activities)
+                </p>
+                <p>
+                    Developed as part of an independent study project for Fall 2020. An iOS app with augmented reality that aims to simulate the in-person experience through physical interaction with virtual objects to improve skills in spatial reasoning.
+                </p>
+                <img src="../assets/leARn-spatial-poster.jpg"></img>
+                <div>
+                    <p>
+                        This project considered an approach to close the gender gap in spatial reasoning cognitive skills through new technology. I also aimed to examine education in the time of social distancing and how we can shift education to think about the online, remote experience and build better solutions for our current situation as well as take advantage of the affordances that would not be possible in other forms.
+                    </p>
+                    <p>
+                        I created the 3D objects in Maya and built the app using Unity, writing code in C#. The objects draw inspiration from the revised Purdue Spatial Visualization Test: Rotations section. I reached out to the professor who worked on that test to better understand evaluation of spatial reasoning skills. I planned the code structure with flexibility in mind, and once the core components were complete, I conducted two rounds of limited user testing to find pain points in the user experience and improve the app based on the feedback.
+                    </p>
+                    <p>
+                        I could see this project extending to include more exercises, as well as a "teacher" mode that allows educators to create their own spatial reasoning exercises and send them to their students virtually. This work builds on my previous experience as part of a <a href="https://bassconnections.duke.edu/project/spatial-reasoning-and-problem-based-learning-improve-girls-math-identity-2019-2020/">Bass Connections project</a> focused on problem-based learning and spatial reasoning to improve middle-school aged girls’ confidence in math and STEM in order to lessen the gender gap in those fields.
+                    </p>    
+                </div>        
+            </section>
+            <section>
+                <h2>AR Storytelling</h2>
+                <a href="https://github.com/selenaqian/AR-storytelling" target="_blank">GitHub respository</a>
+                <p>
+                    Developed as final project for Immersive Virtual Worlds class in Spring 2020. Proof-of-concept that aims to bring a non-linear, physically interactive story experience to Goldilocks and the Three Bears.
+                </p>
+                <div class="slideshow">
+                    <img src="../assets/arstorytelling-1.jpg"></img>
+                    <img src="../assets/arstorytelling-2.jpg"></img>
+                    <img src="../assets/arstorytelling-3.jpg"></img>
+                    <img src="../assets/arstorytelling-4.jpg"></img>
+                    <img src="../assets/arstorytelling-5.jpg"></img>
+                    <img src="../assets/arstorytelling-6.jpg"></img>
+                    <img src="../assets/arstorytelling-7.jpg"></img>
+                    <img src="../assets/arstorytelling-8.jpg"></img>
+                </div>
+                <p>
+                    The app prompts users to add a character (Goldilocks or the three bears) and a scene (forest, bridge, chairs, porridge, beds) image into the physical space. The 3D models pop up over those images and prompt further interaction, based on what they are. This then loops back around to the main prompt, eventually leading to a final outcome.
+                </p>        
+            </section>
+            <section>
+                <h2>Habitat Hoppers Game</h2>
+                <div class="column-container">
+                    <a href="https://github.com/selenaqian/habitat-hoppers-game" target="_blank">GitHub respository</a>
+                    <a href="https://selenaqian.github.io/habitat-hoppers-game/" target="_blank">
+                        <button>Play the Game!</button>
+                    </a>
+                </div>
+                <p>
+                    Developed as final project for Unity 3D and Interface Design class in Fall 2019. 2-person platformer with 3D map elements. Inspired by games like Fireboy and Watergirl, Super Mario Bros., Doodle Jump.
+                </p>
+                <img src="../assets/habitathoppers-splashlogo.png"></img>
+                <p>
+                    The game is a 2D platformer, with a 3D element for the level map. The storyline follows two friends, Square and Circle, working together to find a third friend, Triangle, who has been lost somewhere on an island. The two embark on a perilous journey across different terrains to find their friend.
+                </p>
+                <p>
+                    Along with writing the C# scripts, I also created all of the pixel art assets. The music comes from free online resources.
+                </p>
+            </section>
+            <section>
+                <h2>Covid Warrior Game</h2>
+                <a href="https://github.com/selenaqian/Covid_Warrior" target="_blank">GitHub respository</a>
+                <p>
+                    Developed as an independent project in 2021 with a team of 3 developers. 2D platformer built in Unity with math questions pulled from a mongoDB database.
+                </p>
+                <p>
+                    I created the bulk of the game logic, including the player movement, signup and login, and the connection of the mongoDB question database to the game through webhooks. I also collaborated with other students on a game design document detailing the game's goals and the gameplay flow.
+                </p>        
+            </section>
+            <section>
+                <h2>Duke Chronicle First Year Survey 2023</h2>
+                <div class="column-container">
+                    <a href="https://github.com/selenaqian/dukechronicle-firstyearsurvey2023" target="_blank">GitHub respository</a>
+                    <a href="https://www.dukechronicle.com/article/2019/11/duke-first-year-class-of-2023-survey-results" target="_blank">Published on The Chronicle's site</a>    
+                </div>
+                <p>
+                    Created for The Chronicle, Duke's student newspaper. Interactive data visualizations based on data from survey of first-year students in the class of 2023. Built using the Google Charts API.
+                </p>        
+            </section>
         </div>
         <custom-footer></custom-footer>
         <script src="./modules/menu.js"></script>

@@ -18,6 +18,7 @@ h1 {
     flex: 1 0 auto;
     padding-left: 5vw;
     padding-right: 5vw;
+    margin-bottom: 30px;
 }
 
 main-menu .container {
@@ -32,12 +33,7 @@ main-menu .child {
 main-menu .current {
     color: red;
 }
-  
-main-menu a:hover {
-    background-color: #b6c3e6;
-    color: black;
-}
-  
+
 main-menu .dropdown {
     display: none;
 }
@@ -74,10 +70,9 @@ main-menu .dropdown {
     max-height: 150px;
     max-width: 150px;
     border-radius: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 5vw;
+    margin: 5vw auto 0;
     display: block;
+    float: none;
 }
 
 .column-container {
@@ -85,15 +80,27 @@ main-menu .dropdown {
     flex-direction: column;
 }
 
-.row-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 30px;
+.main img {
+    object-fit: contain;
+    width: 90vw;
+    max-width: 500px;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 30px;
 }
 
-img {
+video {
     object-fit: contain;
+    width: 90vw;
+    max-width: 500px;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+a:hover {
+    background-color: #b6c3e6;
+    color: black;
 }
 
 .header {
@@ -103,6 +110,104 @@ img {
 .subhead {
     color: #666666;
     margin-top: 10px;
+}
+
+.slideshow {
+    width: 90vw;
+    max-width: 500px;
+    display: flex;
+    gap: 4vw;
+    float: left;
+    margin-bottom: 40px;
+    margin-right: 30px;
+
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    anchor-name: --slideshow;
+    scroll-marker-group: after;
+}
+
+.slideshow img {
+    flex: 0 0 100%;
+    margin: 0;
+    scroll-snap-align: center;
+}
+
+.slideshow::-webkit-scrollbar {
+    display: none;
+}
+
+.slideshow {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.slideshow::scroll-button(*) {
+    border: 0;
+    background-color: transparent;
+    font-size: 2rem;
+    color: #666666;
+    cursor: pointer;
+    position: absolute;
+    position-anchor: --slideshow;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.slideshow::scroll-button(*):hover {
+    translate: 1px 1px;
+    color: #333333;
+    cursor: pointer;
+}
+
+.slideshow::scroll-button(*):active {
+    translate: 3px 3px;
+}
+
+.slideshow::scroll-button(*):disabled {
+    color: #bbbbbb;
+    cursor: unset;
+    translate: 0;
+}
+
+.slideshow::scroll-button(left) {
+    content: "<";
+    right: calc(anchor(left) - 30px);
+    bottom: calc(anchor(center) - 1rem);
+}
+
+.slideshow::scroll-button(right) {
+    content: ">";
+    left: calc(anchor(right) - 30px);
+    bottom: calc(anchor(center) - 1rem);
+}
+
+.slideshow::scroll-marker-group {
+    position: absolute;
+    position-anchor: --slideshow;
+    top: calc(anchor(bottom));
+    justify-self: anchor-center;
+
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px;
+}
+
+.slideshow img::scroll-marker {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: #bbbbbb;
+    border-radius: 50%;
+}
+
+.slideshow img::scroll-marker:target-current {
+    background-color: #333333;
+}
+
+.slideshow img::scroll-marker:hover {
+    background-color: #333333;
+    cursor: pointer;
 }
 
 custom-footer {
