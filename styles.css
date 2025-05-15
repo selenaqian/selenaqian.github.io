@@ -18,7 +18,9 @@ h1 {
     flex: 1 0 auto;
     padding-left: 5vw;
     padding-right: 5vw;
+    margin: auto;
     margin-bottom: 30px;
+    max-width: 1000px;
 }
 
 main-menu .container {
@@ -91,6 +93,7 @@ main-menu .dropdown {
 
 .row-container .child {
     flex: 1;
+    max-width: 300px;
     margin: auto;
 }
 
@@ -263,8 +266,12 @@ a:hover {
     margin-bottom: 40px;
 }
 
+#coloringbook img {
+    max-width: 300px;
+}
+
 #activitiesfair {
-    max-width: 90vw;
+    max-width: 1000px;
     float: none;
     margin-top: 20px;
 }
@@ -314,4 +321,9 @@ custom-footer img {
 
 custom-footer p {
     font-size: x-small;
+}
+
+footer {
+    max-width: 1000px;
+    margin: auto;
 }
