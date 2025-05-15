@@ -78,6 +78,19 @@ main-menu .dropdown {
 .column-container {
     display: flex;
     flex-direction: column;
+    gap: 20px;
+}
+
+.row-container {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.row-container .child {
+    flex: 1;
+    margin: auto;
 }
 
 .main img {
@@ -110,6 +123,15 @@ a:hover {
 .subhead {
     color: #666666;
     margin-top: 10px;
+}
+
+.slideshow-caption {
+    color: #666666;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: center;
+    font-style: italic;
 }
 
 .slideshow {
@@ -208,6 +230,42 @@ a:hover {
 .slideshow img::scroll-marker:hover {
     background-color: #333333;
     cursor: pointer;
+}
+
+#pewresearch {
+    float: none;
+    max-height: 500px;
+    max-width: 750px;
+    background-color: #000000db;
+    margin: auto;
+    margin-bottom: 40px;
+    anchor-name: --pew;
+}
+
+#pewresearch img {
+    max-width: 750px;
+}
+
+#pewresearch::scroll-button(*) {
+    position-anchor: --pew;
+}
+
+#pewresearch::scroll-marker-group {
+    position-anchor: --pew;
+}
+
+#coloringbook {
+    float: none;
+    max-height: 400px;
+    background-color: #000000db;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+#activitiesfair {
+    max-width: 90vw;
+    float: none;
+    margin-top: 20px;
 }
 
 custom-footer {
